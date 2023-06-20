@@ -6,5 +6,5 @@
 ```
 HTML5 doctype html head meta title body
 h1~h6 p strong em. sub sup s del code blockquote q 
-addresshr &gt; &lt; &copy; &amp;
+address hr &gt; &lt; &copy; &amp;
 ```
