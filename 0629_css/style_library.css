@@ -78,10 +78,10 @@
             #r3_bg .r3_area_wrap .event_wrap .btm .title {}
             #r3_bg .r3_area_wrap .event_wrap .btm .title h2 {}
             #r3_bg .r3_area_wrap .event_wrap .btm .title h2 .fa {}
-            #r3_bg .r3_area_wrap .event_wrap .btm .title h2 span {}
+            #r3_bg .r3_area_wrap .event_wrap .btm .title h2 > span {}
+            #r3_bg .r3_area_wrap .event_wrap .btm .title h2 span span{}
             #r3_bg .r3_area_wrap .event_wrap .btm .title p {}
-            #r3_bg .r3_area_wrap .event_wrap .btm .title p > span {}
-            #r3_bg .r3_area_wrap .event_wrap .btm .title p span span{}
+            #r3_bg .r3_area_wrap .event_wrap .btm .title p  span {}
             #r3_bg .r3_area_wrap .event_wrap .btm .event_data {}
             #r3_bg .r3_area_wrap .event_wrap .btm .event_data thead {}
             #r3_bg .r3_area_wrap .event_wrap .btm .event_data thead tr {}
