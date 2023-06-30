@@ -40,6 +40,7 @@
             #r1_bg .bnr_area #searchFtm fieldset legend {}
             #r1_bg .bnr_area #searchFtm fieldset input {}
             #r1_bg .bnr_area #searchFtm fieldset #searchBtn {}
+            #r2_bg
             #r2_bg .menu_area {}
             #r2_bg .menu_area a {}
             #r3_bg {}
@@ -50,10 +51,9 @@
             #r3_bg .r3_area_wrap .notice_wrap .top .right {}
             #r3_bg .r3_area_wrap .notice_wrap .top .right .more {}
             #r3_bg .r3_area_wrap .notice_wrap .btm {}
-            #r3_bg .r3_area_wrap .notice_wrap .btm ul {}
-            #r3_bg .r3_area_wrap .notice_wrap .btm ul li {}
-            #r3_bg .r3_area_wrap .notice_wrap .btm ul li a {}
-            #r3_bg .r3_area_wrap .notice_wrap .btm ul li span {}
+            #r3_bg .r3_area_wrap .notice_wrap .btm li {}
+            #r3_bg .r3_area_wrap .notice_wrap .btm li a {}
+            #r3_bg .r3_area_wrap .notice_wrap .btm li span {}
             #r3_bg .r3_area_wrap .popup_wrap {}
             #r3_bg .r3_area_wrap .popup_wrap .top {}
             #r3_bg .r3_area_wrap .popup_wrap .top h1 {}
@@ -64,7 +64,8 @@
             #r3_bg .r3_area_wrap .popup_wrap .top .right .bnr4 {}
             #r3_bg .r3_area_wrap .popup_wrap .top .right .pause {}
             #r3_bg .r3_area_wrap .popup_wrap .btm {}
-            #r3_bg .r3_area_wrap .popup_wrap .btm .popup1_active {}
+            #r3_bg .r3_area_wrap .popup_wrap .btm .popup1 {}
+            #r3_bg .r3_area_wrap .popup_wrap .btm .popup1 img {}
             #r3_bg .r3_area_wrap .popup_wrap .btm .popup2 {}
             #r3_bg .r3_area_wrap .popup_wrap .btm .popup3 {}
             #r3_bg .r3_area_wrap .popup_wrap .btm .popup4 {}
@@ -76,10 +77,11 @@
             #r3_bg .r3_area_wrap .event_wrap .btm {}
             #r3_bg .r3_area_wrap .event_wrap .btm .title {}
             #r3_bg .r3_area_wrap .event_wrap .btm .title h2 {}
-            #r3_bg .r3_area_wrap .event_wrap .btm .title h2 .fa_fa-angle-left {}
+            #r3_bg .r3_area_wrap .event_wrap .btm .title h2 .fa {}
             #r3_bg .r3_area_wrap .event_wrap .btm .title h2 span {}
             #r3_bg .r3_area_wrap .event_wrap .btm .title p {}
             #r3_bg .r3_area_wrap .event_wrap .btm .title p span {}
+            #r3_bg .r3_area_wrap .event_wrap .btm .title p span span{}
             #r3_bg .r3_area_wrap .event_wrap .btm .event_data {}
             #r3_bg .r3_area_wrap .event_wrap .btm .event_data thead {}
             #r3_bg .r3_area_wrap .event_wrap .btm .event_data thead tr {}
@@ -115,9 +117,8 @@
             footer {}
             footer .f_top_bg {}
             footer .f_top_bg .f_top {}
-            footer .f_top_bg .f_top .f_top {}
-            footer .f_top_bg .f_top .f_top a {}
-            footer .f_top_bg .f_top .f_top a img {}
+            footer .f_top_bg .f_top a {}
+            footer .f_top_bg .f_top a img {}
             footer .f_btm_bg {}
             footer .f_btm_bg .f_btm {}
             footer .f_btm_bg .f_btm .btm_menu {}
