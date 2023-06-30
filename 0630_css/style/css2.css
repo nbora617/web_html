@@ -1,0 +1,39 @@
+main {
+    background-color:rgba(0,0,0,0.8);
+    padding:50px;
+}
+main .box {
+    width:200px; height:200px;
+    font-size:4rem;
+    border:5px dashed #fff;
+    border-radius:50%;
+    text-align:center;
+    line-height: 200px;
+    /* line-height값과 height값을 동일하게 작성하면 요소가 수직 중앙으로 온다.(1행일 경우 가능) */
+}   /* 동일한 속성을 적용시킬 때 작성하는 선택자 */
+main .a {
+    float:left;
+    /* padding(안쪽여백) 추가시 실제 크기에 변화를 주지 않는다.
+    바깥으로 튀어나오지 않도록 하기 위해서는 공통적으로 설정한 너비값에서 padding(안쪽너비)값을 뺸 수치를 너비값으로 지정해줘야 한다. */
+    box-sizing:border-box;
+    /* padding-right:50px; */
+    /* width:150px; */
+    background-color: azure;
+}
+main .b {
+    clear:both;
+    /* float:left; */
+    box-sizing:border-box;
+    /* padding-top:30px; */
+    /* height:170px; */
+    font-size:3rem;
+    background-color: deepskyblue;}
+    /* 나중에 작성한 속성이 최종적으로 디자인이 적용 => 작성순서에 따라 우선순위가 결정 */
+main .c {
+    float:left;
+    /* clear:both; */
+    /* float:none; */
+    box-sizing:border-box;
+    /* padding:10px 20px; */
+    /* width:160px; height:180px; */
+    background-color: gold;}

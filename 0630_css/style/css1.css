@@ -1,0 +1,58 @@
+/* 로컬글꼴 연결법 */
+/* 웹글꼴 연결법 */
+/* 구글폰트 접속 -> 글꼴선택 -> link or import 글꼴주소 가져오기 -> font-family 글꼴연결 */
+dl {
+    font-size:2rem; /* 32px */
+}
+dl dt {
+    background-color:rgba(0,255,255,0.7);
+    font-size:1.5rem;
+    color:rgba(0.0.0.0.5);
+}
+dl dt em {
+    display:none;   /* 보이지 않도록 설정  --동적기능에 사용(사용자의 특정한 상황에 따라 숨겨져 있다가 나타나도록 함  --예: 로그인에 비밀번호만 입력하면 아이디도 입력하라고 나타남) */
+    background_color:#000; color:#fff;
+    font-family:'양평군체_보조';
+
+}
+dl dd {
+    background-color:yellowgreen;
+}
+dl dd span {
+    display:block;   /* 인라인을 블록으로 보이도록 설정 => 줄바꿈과 기본너비 100%로 변경 */
+    background_color:#000; color:#fff;
+}
+.f12 {
+    display:inline;   /* 블록을 인라인같이 보이도록 형성 => 내용만 디자인 적용가능하도록 함 */
+    background-color: aqua;
+    word-spacing:0.05em;
+    letter-spacing:-0.02em; /* 2% */
+    font-size:1.25rem;
+    line-height:1.5; /* 1.0==100% */
+    /* font-size의 px값 기준 설정이 불편할 경우 상대값 기준으로 line-height을 처리한다. (100% 기준)  */
+    /* line-height를 px로 작성할 경우는 font-size의 px값 기준으로 값이 결정된다. */
+}
+.overflow {
+    background-color:rgba(0,0,0,0.2);
+    font-size:1.25rem;
+    width:400px;
+    overflow:hidden;
+    white-space:nowrap; /* 공백 */
+    text-overflow:ellipsis;
+}
+#a {
+    background-color: darkmagenta;
+    width:500px; height:500px;
+    margin-left:50px;
+    padding-top:20px;
+}
+#a #b {
+    margin:0x 10px 0;
+    border:5px solid coral;
+    font-size:5rem;
+    background-color: cornflowerblue;
+    width:50%; height:300px;
+    /* 자식의 너비는 %로 입력하여 부모의 너비 값을 변경하여도 %로 입력하여 상대적으로 변경되므로 따로 변경할 필요가 없음. */
+    /* 자식요소의 크기를 입력 시에는 반드시 부모 요소보다 작거나 같아야 한다. */
+    /* 자식요소가 부모요소보다 큰 경우는 이용약관과 같이 특정 공간에서 스크롤하여 넘치는 내용을 확인하는 경우에 해당. */
+}
