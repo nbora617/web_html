@@ -1,0 +1,89 @@
+/* header */
+header {
+    background-color:aqua;
+    height:92px;
+    border:1px solid black;
+    
+}
+header h1 {}
+header h1 img {}
+/* header-nav */
+header nav {background-color:azure; }
+header nav ul {}
+header nav ul li {font-size:1.2rem;}
+header nav ul li em {color:#36b4e5;}
+/* header-lnb */
+header .lnb {}
+header .lnb ul {}
+header .lnb ul li {}
+header .lnb ul li a {font-size:1.2rem;}
+/* main */
+main {background-color: blueviolet;}
+/* main-페이지경로 */
+main .breadcrumbs_bg {
+    background-color:#f1f1f1;
+    border:1px solid #aaa; 
+    padding: 20px 20px 20px 0;
+}
+main .breadcrumbs_bg .breadcrumbs {}
+main .breadcrumbs_bg .breadcrumbs a {}
+main .breadcrumbs_bg .breadcrumbs a em {}
+/* main-c1-경영이념 */
+main .contents1 {
+    background-color: blue;
+    border:1px solid black;
+    padding:70px 0;
+}
+main .contents1 h1 {
+    text-align:center;
+}
+main .contents1 p {
+    text-align:center;
+}
+/* main-c2 */
+main .c2_bg {
+    background-color:#f1f1f1;
+    border:1px solid #aaa; 
+}
+main .c2_bg .contents2 {
+    padding:70px 0;
+}
+main .c2_bg .contents2 p {
+    text-align:center;
+}
+/* main-c3 */
+main .contents3 {
+    background-color: darkslateblue;
+    padding:70px 0;}
+main .contents3 h2 {
+    text-align:center;
+    padding-bottom:50px;
+}
+main .contents3 p {
+    line-height:20px; letter-spacing:-0.02em;
+    text-align:center;
+    padding-bottom:50px;
+}
+/* main-c4 */
+main .c4_bg {
+    background-color:#f1f1f1;
+    border:1px solid #aaa; }
+main .c4_bg .contents4 {
+    padding:70px 0;
+}
+main .c4_bg .contents4 h2 {}
+main .c4_bg .contents4 h2 h3 {}
+main .c4_bg .contents4 h2 p {}
+/* footer */
+footer {background-color: gold;}
+footer .f_top {}
+/* footer-top-fnb */
+footer .f_top .fnb {}
+footer .f_top .fnb li {}
+footer .f_top .fnb li a {}
+/* footer-top-site */
+footer .f_top .site {}
+/* footer-btm */
+footer .f_btm {}
+footer .f_btm address {}
+footer .f_btm p {}
