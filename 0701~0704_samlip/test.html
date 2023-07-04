@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>test</title>
+    <style>
+        /* 내부스타일 시트 */
+        /* #a {color:green;} */
+        /* CSS 우선순위순서(클래스, 아이디, 태그, 인라인) : 인라인 > 아이디 > 클래스 > 태그*/
+        /* 동일한 순위일 경우 무엇을 기준으로 순위가 정해지는가?
+        가장 나중에 선언된 스타일이 우선순위가 된다. 즉, 동일한 순위일 경우에는 아래에 선언될수록 우선순위가 된다. */
+        .b {color:red;}
+        h1 {color:pink;}
+        .c {color:yellow;}
+        article {
+        /* layout css - 크기, 정렬, (+여백) */
+        width:543px;
+        background-color:#d9d9d9;
+        margin:0 auto;
+        }
+        article h1 {}
+        article p {}
+
+        /* float연습 */
+        /* 조건1. 같은 부모 안 형제 요소가 2개일 경우 */
+        /* 조건2. (위)형제 2개 이상을 좌우 배치가 필요한 경우 */
+        /* 박스사이즈가 큰 경우에는 부족한 공간으로 인해 자동 줄바꿈이 발생 */
+        *{margin:0; padding:0; box-sizing:border-box;}
+        #define  {/* 부모 */
+            background-color:gray;
+            width:543px; margin:50px auto 0; 
+            /* overflow:hidden; */
+        }
+        #define::after {clear:both; display:block; content:'';}   /* ==가상요소 */
+        #define dt {float:left; width:49%;} /* 형제1 */
+        #define dd {float:right; width:49%;} /* 형제2 */
+        /* 공간을 50%로 지정한 경우에는 서로 절반씩 공간을 차지하므로 공간이 초과하지 않아 줄바꿈없이 float되어 배열되는 것을 확인가능 */
+        /* 수열선택자 이용 형제 색상 구분 */
+        /* nth-child() ==괄호안에는 부모태그안 형제태그의 기준으로 순서를 작성 */
+        #define dt:nth-child(1) {background-color:lime;} /* 제목1 */
+        #define dt:nth-child(3) {background-color:coral;} /* 제목2 */
+        #define dd:nth-child(2) {background-color:yellow;} /* 내용1 */
+        #define dd:nth-child(4) {background-color:pink;} /* 내용2 */
+        
+        
+        figure {
+            background-color:aqua;
+            width:543px; margin:0 auto;
+            overflow:hidden;   /* ==부모가 부유한 자식의 크기를 인식하도록 해주는 속성 */
+        }
+        figure img {float:left;}
+        figure figcaption {float:right;}
+        /* float 부유특징에 따른 문제해결 */
+        /* 부모요소의 H값이 없으면 부모는 자식만큼 크기를 인식한다
+        그러나 자식이 float를 가지면 부모에서 벗어나는 특징(가출)때문에 부모가 자식만큼의 크기를 못가지고 H=0이 되는 문제가 발생한다. */
+        /* 해결방법 */
+        /* 
+        1.가출한 float 자식 잡기
+            부모요소에 overflow:hidden; 명령 (영역재인식)
+        2. 새로운 자식 입양하기
+            부모요소에 가상 요소(입양) 삽입
+            부모::after {
+                clear:both; content:''; didpaly:block;
+            }
+        3. 강제높이설정(추천X)
+            부모 요소에 강제로 height: px; 명령*/
+
+        footer {
+            width:700px; margin:0 auto;
+            background-color:lightgrey;
+            overflow:hidden;
+            /* float는 정렬대상에 명령, text-align은 부모에 명령 */
+            text-align:right;
+        }
+        footer span {
+            width:100px; height:100px; 
+            border-radius:50%;
+            display:block;     /* ==인라인은 크기를 가질 수 없으므로 크기를 지정해도 내용만 스타일이 적용되므로 블록으로 보이도록 css명령 작성 */
+            /* float:right;    ==형제태그가 4개인 선택자에 float:right;를 줬으므로 right가 4개가 명령된 것이므로 역순으로 나열되어 표현 */
+            display:inline-block;   
+            /* ==float을 주면 사이에 여백이 발생하지 않지만 inline-block 명령은 형제들이 옆으로 나열되지만 사이에 여백이 발생 
+                => margin-left:-px; (6~8px)를 작성하여 태그 사이의 여백을 제거*/
+            /* inline-block 특징 */
+            /* 1. inline 특징으로 옆으로 정렬된다. (사이 여백 발생)
+            2. block특징으로 크기와 여백을 가진다.
+            3.inline과 block에 들어가는 css를 거의 모두 가질 수 있다. */
+            text-align:center; line-height:100px;
+            /* 글자가 한줄인 경우에는 글자높이를 높이와 동일하게 명령하여 글자가 가운데에 배치하도록 해줌 */
+        }
+        footer span:nth-child(1) {background-color:red;}
+        footer span:nth-child(2) {background-color:green;}
+        footer span:nth-child(3) {background-color:blue;}
+        footer span:nth-child(4) {background-color:rgb(221, 70, 171);}
+</style>
+</head>
+<body>
+    <!-- 인라인스타일시트 -->
+    <h1 class="b c" id="a" style="color:blue">제목</h1>
+    <article 
+    > <!-- 뉴스. 블로그 페이지 내 독립영역 틀-->
+        <h1>제목</h1>
+        <p>내용</p>
+    </article>
+
+    <dl id="define">
+        <dt>제목1</dt>
+        <dd>내용1</dd>
+        <dt>제목2</dt>
+        <dd>내용2</dd>
+    </dl>
+
+    <figure>
+        <img src="./image/spc-samlip-logo-new.png" alt="">
+        <figcaption>삼립 로고 이미지</figcaption>
+    </figure>
+
+    <footer>
+        <span>span1</span>
+        <span>span2</span>
+        <span>span3</span>
+        <span>span4</span>
+    </footer>
+</body>
+</html>
