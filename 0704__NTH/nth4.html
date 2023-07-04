@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>nth4</title>
+<style>
+    *{
+        margin:0; padding:0;
+        list-style:none;
+        box-sizing:border-box;
+    }
+    .best {border:1px solid #000;
+        width:1000px; margin:0 auto; overflow:hidden;
+        /* overflow:hidden; 영역재정비 */
+    }
+    .best li {
+        /* background-color:aqua; */
+        width:25%; height:200px; float:left;
+        /* 한줄에 4개로 작성하므로 width:25%
+            6개로 나열하는 경우는 6/100% 값으로 작성 */
+    }
+    .best li:nth-child(odd) {background-color: aqua;}
+    .best li:nth-child(even) {background-color: yellow;}
+    .best li:nth-child(2n+1) {border:3px solid red;}
+</style>
+</head>
+<body>
+    <ul class="best">
+        <li>
+            <h3>상품명</h3>
+            <p class="price">10,000원</p>
+            <p>설명</p>
+        </li>
+        <li>
+            <h3>상품명</h3>
+            <p class="price">10,000원</p>
+            <p>설명</p>
+        </li>
+        <li>
+            <h3>상품명</h3>
+            <p class="price">10,000원</p>
+            <p>설명</p>
+        </li>
+        <li>
+            <h3>상품명</h3>
+            <p class="price">10,000원</p>
+            <p>설명</p>
+        </li>
+        <li>
+            <h3>상품명</h3>
+            <p class="price">10,000원</p>
+            <p>설명</p>
+        </li>
+        <li>
+            <h3>상품명</h3>
+            <p class="price">10,000원</p>
+            <p>설명</p>
+        </li>
+    </ul>
+</body>
+</html>

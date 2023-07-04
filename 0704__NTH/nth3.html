@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>nth3</title>
+    <style>
+        /* 한칸뛰고 선택자 작성: 자식 뿐만 아니라 자손도 선택되어 태그가 동일한 경우에는 같이 선택 */
+        /* 자식, 자손이 중복되어 존재하는 경우에는 >를 사용하여 자손이 아닌 자식만 선택되도록 선택자 작성 */
+        /* .gnb  li:nth-child(2)  a:nth-child(1) 의 경우에는 a:nth-child(1)인 경우가 자식뿐만 아니라 자손도 존재하므로 4개가 선택됨*/
+        /* .gnb  li:nth-child(2) > a:nth-child(1) 의 경우에는 gnb2-1의 자손중에도 a:nth-child(1)의 선택자가 존재하므로 같이 선택 */
+        /* gnb2-1만 선택하기 위해서는 .gnb > li:nth-child(2) > a:nth-child(1) 로 선택자를 작성하여 >에서 자식만 선택되도록 선택자를 작성 */
+        .gnb > li:nth-child(2) >  a:nth-child(1) {
+            background-color:lightblue;
+        }
+        /* nth-child 이용한 경우 */
+        /* .gnb li:nth-child(2) .snb:nth-child(3) {
+            background-color:red;
+        }
+        .gnb li:nth-child(2) .snb:nth-child(4) {
+            background-color:blue;
+        } */
+        /* nth-of-type 이용한 경우 */
+        .gnb li:nth-child(2) .snb:nth-of-type(1) {background-color:red;}
+        .gnb li:nth-child(2) .snb:nth-of-type(2) {background-color:blue;}
+    </style>
+</head>
+<body>
+    <ul class="gnb">
+        <li><a href="#">gnb1</a></li>
+        <li><a href="#">gnb2-1</a>
+            <a href="#">gnb2-2</a>
+            <ul class="snb">
+                <li><a href="#">snb1</a></li>
+                <li><a href="#">snb2</a></li>
+            </ul>
+            <ul class="snb">
+                <li><a href="#">snb1</a></li>
+                <li><a href="#">snb2</a></li>
+            </ul>
+        </li>
+        <li><a href="#">gnb3</a></li>
+    </ul>
+</body>
+</html>
