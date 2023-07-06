@@ -1,28 +1,24 @@
-/* h-top */
-.h_top {
-    background-color:#ccc;
-    width:1440px;
-}
-.h_top a {margin:0 auto;}
+/* h-top event banner */
+.h_top_bg {}
+.h_top_bg p {}
+.h_top_bg p a {}
 /* header */
-header .h_btm {}
-header .h_btm h1 {}
-header .h_btm h1 a {}
-header .h_btm_left {}
-header .h_btm_left #gnb {}
-header .h_btm_left #gnb .gnb_left {}
-header .h_btm_left #gnb .gnb_left li {}
-header .h_btm_left #gnb .gnb_left li a {}
-header .h_btm_left #gnb .gnb_right {}
-header .h_btm_left #gnb .gnb_right .user_gnb {}
-header .h_btm_left #gnb .gnb_right .user_gnb li {}
-header .h_btm_left #gnb .gnb_right .user_gnb li a {}
-header .h_btm_left #gnb .gnb_right .user_gnb li a img {}
-header .h_btm_left #gnb .gnb_right .gnb_ect {}
-header .h_btm_left #p {}
-
-/* nav */
 header {}
+/* header-logo */
+header h1 {}
+header h1 a {}
+header h1 a img {}
+/* header-gnb */
+header #gnb {}
+header #gnb .gnb1 {}
+header #gnb .gnb1 a {}
+header #gnb .gnb1 a span {}
+header #gnb .gnb2 {}
+header #gnb .gnb2 a {}
+header #gnb .gnb2 a img {}
+header #gnb .gnb_ect {}
+header #gnb .gnb_ect img {}
+/* nav */
 header nav {}
 header nav ul {}
 header nav ul li {}
@@ -30,39 +26,36 @@ header nav ul li a {}
 
 /* main */
 main {}
-/* 메인이미지 */
 main a {}
 main a img {}
 /* main-bnr_top */
-main a img .bnr_top {}
-main a img .bnr_top a {}
-main a img .bnr_top a img {}
+main .bnr_top {}
+main .bnr_top a {}
+main .bnr_top a img {}
 /* main-best_items */
-main .best_item {}
-main .best_item h1 {}
-main .best_item ul {}
-main .best_item ul li {}
-main .best_item ul li a {}
-main .best_item ul li a img {}
-main .best_item ul li .title {}
-main .best_item ul li .title h2 {}
-main .best_item ul li .title p {}
-main .best_item ul li .contents {}
-main .best_item ul li .contents .size_review {}
-main .best_item ul li .contents .size_review p {}
-main .best_item ul li .contents .size_review p a {}
-main .best_item ul li .contents .ect {}
-main .best_item ul li .contents .ect p {}
+main .best_items {}
+main .best_items h1 {}
+main .best_items ul {}
+main .best_items ul li {}
+main .best_items ul li a {}
+main .best_items ul li a img {}
+main .best_items ul li .title {}
+main .best_items ul li .title h2 {}
+main .best_items ul li .title h2 p {}
+main .best_items ul li .contents {}
+main .best_items ul li .contents .size_review {}
+main .best_items ul li .contents .size_review span {}
+main .best_items ul li .contents .ect {}
+main .best_items ul li .contents .ect span {}
 /* main-bnr_btm */
 main .bnr_btm {}
 main .bnr_btm h1 {}
 main .bnr_btm p {}
 main .bnr_btm p a {}
-
 /* footer */
 footer {}
 footer .f_top {}
 footer .f_top li {}
-footer .f_top li  a {}
-footer .f_top li  a em {}
+footer .f_top li a {}
+footer .f_top li a em {}
 footer p {}
