@@ -1,8 +1,28 @@
-/* header-h top */
-header {background-color:darkkhaki;}
-header #h_top {
-    background-color:khaki;
+/* popup */
+#top {
+    position:fixed; right:50px; bottom:50px;
+    width:34px; height:34px;
+}
+#top img {width:100%}
+/* all layout */
+header, 
+main #visual, 
+main #main_service, 
+main .bnr_bg .bnr,
+main #board,
+main #field_info,
+main #news,
+footer
+{
     width:1152px; margin:0 auto;
+}
+/* header-h top */
+header {
+    /* background-color:darkkhaki; */
+
+}
+header #h_top {
+    background-color:darksalmon;
     overflow:hidden;
     padding-bottom:10px;
 }
@@ -11,120 +31,228 @@ header #h_top .left {
     float:left;
 }
 header #h_top .left h1 {
-    float:left; margin-top:10px; margin-right:28px;}
+    float:left;
+    width:110px; height:28px;
+    margin-top:10px;
+}
 header #h_top .left h1 a {}
-header #h_top .left h1 a img {}
+header #h_top .left h1 a img {width:100%}
 header #h_top .left nav {
     background-color:palevioletred;
     float:left;
 }
 header #h_top .left nav ul {
-    margin-top:18px;
 }
 header #h_top .left nav ul li {
     display:inline;
-    margin-right:10px;
+    margin-left:20px;
 }
-header #h_top .left nav ul li:last-child {margin-right:0;}
-header #h_top .left nav ul li a {}
+header #h_top .left nav ul li:last-child {}
+header #h_top .left nav ul li a {
+    line-height:48px;
+    letter-spacing:-0.02em;
+    font-weight:500;
+}
 header #h_top .right {
     background-color:plum;
     float:right;
-    font-weight:500;
     margin-top:18px;
 }
 header #h_top .right li {
     display:inline;
-    margin-left:15px;
+    margin-right:20px;
 }
-header #h_top .right li:nth-child(1) {margin-left:0;}
-header #h_top .right li a {}
+header #h_top .right li:last-child {margin-right:0;}
+header #h_top .right li a {
+    letter-spacing:-0.02em; font-weight:500;
+}
 /* h-top end */
 /* header-h btm */
 header #h_btm {
-    width:1152px; height:119px; margin:0 auto;
+    /* background-color:aqua; */
     overflow:hidden;
+    height:119px;
 }
 header #h_btm h1 {
-    float:left; margin-top:45.5px;}
+    float:left;
+    margin-top:45.5px;
+    width:150px; height:28px;
+}
 header #h_btm h1 a {}
-header #h_btm h1 a img {}
+header #h_btm h1 a img {width:100%;}
 header #h_btm #search_frm {
     background-color:blueviolet;
     float:left;
     margin:36.5px 0 0 231px;
 }
-header #h_btm #search_frm fieldset {}
-header #h_btm #search_frm fieldset legend {}
-header #h_btm #search_frm fieldset input {background-color:purple;}
-header #h_btm #search_frm fieldset #search_btn {background-color:none;}
-header #h_btm #search_frm fieldset #search_btn img {}
+header #h_btm #search_frm fieldset {
+    border:3px solid #1E6CB3;
+    width:368px; height:46px;
+    padding:10px 20px 0;
+}
+header #h_btm #search_frm fieldset legend {display:none;}
+header #h_btm #search_frm fieldset input {
+    float:left;
+    width:calc(100% - 20px);
+}
+header #h_btm #search_frm fieldset input::placeholder {
+    letter-spacing:-0.02em; color:#1E6CB3;
+}
+header #h_btm #search_frm fieldset #search_btn {
+    background:none;
+    width:20px; height:20px;
+    border:none;
+    float:right;
+    cursor:pointer;
+}
+header #h_btm #search_frm fieldset #search_btn img {width:100%}
 header #h_btm .right {
     background-color: greenyellow;
     float:right;
     margin-top:16.5px;
+    text-align:right;
 }
 header #h_btm .right #langfrm {
-    margin-bottom:10px
+    margin-bottom:10px;
 }
-header #h_btm .right #langfrm fieldset {}
-header #h_btm .right #langfrm fieldset legend {}
+header #h_btm .right #langfrm fieldset {
+    border:none;
+}
+header #h_btm .right #langfrm fieldset legend {
+    display:none;
+}
 header #h_btm .right #langfrm fieldset select {
-    border-color:#1E6CB3;
-    font-size:0.833rem; letter-spacing:-0.02em;
+    border:1px solid #1E6CB3;
+    font-size:0.813rem; letter-spacing:-0.02em;
+    width:93px; padding:3px 0;
 }
 header #h_btm .right #langfrm fieldset select option {
 }
 header #h_btm .right #langfrm fieldset #lang_btn {
-    font-size:0.833rem; 
-    width:29px; height:26px;
-    background-color:#1E6CB3; color:#fff;
+    width:30px; height:29px;
+    background-color:#1E6CB3;
+    color:#fff;
     border:none;
+    cursor:pointer;
 }
 header #h_btm .right .weather {}
-header #h_btm .right .weather .current_weather {margin-bottom:5px;}
+header #h_btm .right .weather .current_weather {
+    margin-bottom:5px;
+    text-align:left;
+}
 header #h_btm .right .weather .current_weather em {
-    font-size:1.728rem; font-weight:500; letter-spacing:-0.02em;
+    font-size:2.063rem; font-weight:500;
+    letter-spacing:-0.02em;
 }
 header #h_btm .right .weather .current_dust {
-    font-size:0.833rem;
+    letter-spacing:-0.02em; font-size:0.833rem;
 }
 /* main */
 main {}
 /* main-1 광고배너 */
-main #visual {}
-main #visual .left {}
+main #visual {
+    background-color:cornflowerblue;
+    overflow:hidden;
+}
+main #visual .left {
+    background-color:azure;
+    position:relative;/* 겹치는 대상 부모기준 */
+    width:770px; height:350px;
+    float:left;
+}
 main #visual .left img {}
-main #visual .left .close {}
-main #visual .right {}
-main #visual .right .covid {}
+main #visual .left .close {
+    background-color:#1E6CB3;
+    padding:5px 10px;
+    border:none; border-radius:5px;
+    color:#fff;
+    position:absolute; /* 겸치는 대상 */
+    right:10px; bottom:10px;
+}
+main #visual .right {
+    background-color:bisque;
+    float:right;
+    
+}
+main #visual .right .covid {
+    width:360px; height:230px;
+    display:block;
+    position:relative;
+}
+main #visual .right .covid span {
+    background-color:aqua;
+    position:absolute;
+}
+main #visual .right .covid .data {
+    top:22px; right:37px;
+}
 main #visual .right .covid .data {}
-main #visual .right .covid .data {}
-main #visual .right .covid .data1 {}
-main #visual .right .covid .data2 {}
-main #visual .right .covid .data3 {}
-main #visual .right .covid .data4 {}
-main #visual .right .covid .data5 {}
-main #visual .right .covid img {}
-main #visual .right .traffic {}
-main #visual .right .traffic img {}
+main #visual .right .covid .data1 {top:84px; left:82px;}
+main #visual .right .covid .data2 {top:84px; right:84px;}
+main #visual .right .covid .data3 {bottom:57px; left:60px;}
+main #visual .right .covid .data4 {bottom:57px; right:161px; }
+main #visual .right .covid .data5 {bottom:57px; right:52px;}
+main #visual .right .covid img {width:100%;}
+main #visual .right .traffic {
+    width:360px; height:110px;
+    display:block;
+    margin-top:10px;
+}
+main #visual .right .traffic img {width:100%;}
+/* 주요서비스 ~ 새소식 제목 디자인 그룹 */
+/* 정리후 */
+main section .title {
+    background-color:deeppink;
+    padding:40px 0 20px 0;
+}
+main section .title h2 {
+    font-size:1.44rem; font-weight:500; letter-spacing:-0.02rm;
+}
+main section .title h2 .site {
+    border:1px solid #ccc;
+    padding:10px 10px;
+}
+main section .title h2 .more {}
+/* 정리전 */
+/* main #main_service .title {}
+main #main_service .title h2 {}
+main #main_service .title .site {}
+main #board .event .title {}
+main #board .event .title h2 {}
+main #board .event .title h2 .more {}
+main #board .festival .title {}
+main #board .festival .title h2 {}
+main #board .festival .title .more {}
+main #field_info .title {}
+main #field_info .title h2 {}
+main #news .title {}
+main #news .title h2 {} */
 /* main-2 주요서비스 */
-main #main_service {}
+main #main_service {
+    background-color:coral;
+}
 main #main_service .title {}
 main #main_service .title h2 {}
 main #main_service .title .site {}
 main #main_service .contents{}
-main #main_service .contents a{}
-main #main_service .contents a img{}
-main #main_service .contents a span{}
+main #main_service .contents .site {
+}
+main #main_service .contents .site img{width:60px; height:60px;}
+main #main_service .contents .site span{}
 /* main-3 배너 */
-main .bnr_bg {}
+main .bnr_bg {
+    background-color:#eff5f8;
+}
 main .bnr_bg .bnr {}
 main .bnr_bg .bnr a {}
 main .bnr_bg .bnr a  img {}
 /* main-4 게시판 */
-main #board {}
-main #board .event {}
+main #board {
+    background-color:deepskyblue;
+}
+main #board .event {
+    background-color:gold;
+}
 main #board .event .title {}
 main #board .event .title h2 {}
 main #board .event .title h2 .more {}
@@ -137,24 +265,28 @@ main #board .event .contetns a .environment {}
 main #board .event .contetns a .welfare {}
 main #board .event .contetns a .housing {}
 main #board .event .contetns a .culture {}
-main #board .festival {}
+main #board .festival {
+    background-color:lightcoral;
+}
 main #board .festival .title {}
 main #board .festival .title h2 {}
 main #board .festival .title .more {}
 main #board .festival .title .more img {}
-main #board .festival .title .contets {}
-main #board .festival .title .contets a {}
-main #board .festival .title .contets a span {}
-main #board .festival .title .contets a .environment {}
-main #board .festival .title .contets a .economy {}
-main #board .festival .title .contets a .culture {}
+main #board .festival .contets {}
+main #board .festival .contets a {}
+main #board .festival .contets a span {}
+main #board .festival .contets a .environment {}
+main #board .festival .contets a .economy {}
+main #board .festival .contets a .culture {}
 main #board .service {}
 main #board .service .title {}
 main #board .service .title h2 {}
 main #board .service .contents {}
 main #board .service .contents a {}
 /* main-5 분야정보 */
-main #field_info {}
+main #field_info {
+    background-color:darkorchid;
+}
 main #field_info .title {}
 main #field_info .title h2 {}
 main #field_info .contents {}
@@ -162,16 +294,23 @@ main #field_info .contents a {}
 main #field_info .contents a img {}
 main #field_info .contents a span {}
 /* main-6 새소식 */
-main #news {}
+main #news {
+    background-color:lightblue;
+}
 main #news .title {}
 main #news .title h2 {}
+main #news .title h2 .site {}
 main #news .contents {}
 main #news .contents a {}
 main #news .contents a img {}
 main #news .contents a span {}
 /* footer-f top */
-footer
-footer .f_top {}
+footer {
+    background-color:lightseagreen;
+}
+footer .f_top {
+    background-color:lightyellow;
+}
 footer .f_top .left {}
 footer .f_top .left a {}
 footer .f_top .left a em {}
