@@ -202,24 +202,31 @@ main #visual .right .traffic img {width:100%;}
 /* 주요서비스 ~ 새소식 제목 디자인 그룹 */
 /* 정리후 */
 main section .title {
-    background-color:deeppink;
-    padding:40px 0 20px 0;
+    background-color:rgb(245, 219, 233);
+    padding:50px 0 10px;
+    border-bottom:1px solid #aaa;
+    overflow:hidden;
 }
 main section .title h2 {
-    font-size:1.44rem; font-weight:500; letter-spacing:-0.02rm;
+    font-size:1.44rem; font-weight:500; letter-spacing:-0.02em;
+    float:left;
 }
-main section .title h2 .site {
+main section .title .site {
     border:1px solid #ccc;
-    padding:10px 10px;
+    padding:10px;
+    float:right;
 }
-main section .title h2 .more {}
+main section .title .more {
+    float:right;
+}
+main section .title .more i {font-size:30px;}
 /* 정리전 */
 /* main #main_service .title {}
 main #main_service .title h2 {}
 main #main_service .title .site {}
 main #board .event .title {}
 main #board .event .title h2 {}
-main #board .event .title h2 .more {}
+main #board .event .title .more {}
 main #board .festival .title {}
 main #board .festival .title h2 {}
 main #board .festival .title .more {}
@@ -234,95 +241,250 @@ main #main_service {
 main #main_service .title {}
 main #main_service .title h2 {}
 main #main_service .title .site {}
-main #main_service .contents{}
-main #main_service .contents .site {
+main #main_service .contents{
+    overflow:hidden;
+    padding:20px;
 }
-main #main_service .contents .site img{width:60px; height:60px;}
-main #main_service .contents .site span{}
+main #main_service .contents a {
+    float:left; width:9.09%; /* 100/11 */
+    text-align:center;
+}
+main #main_service .contents a img{}
+main #main_service .contents a span{
+    font-size:0.833rem; letter-spacing:-0.02em;
+    display:block;
+}
 /* main-3 배너 */
 main .bnr_bg {
     background-color:#eff5f8;
+    margin:0 auto;
 }
-main .bnr_bg .bnr {}
-main .bnr_bg .bnr a {}
+main .bnr_bg .bnr {
+    overflow:hidden;
+    padding:50px 0;
+}
+main .bnr_bg .bnr a {
+    width:33.3%;
+    float:left;
+}
 main .bnr_bg .bnr a  img {}
 /* main-4 게시판 */
 main #board {
     background-color:deepskyblue;
+    overflow:hidden
 }
+/* board-contents 공통그룹 */
+main #board > div {
+    width:calc(33.33% - 22px); /* 100/3 -여백 */
+    float:left;
+}
+main .board > div .title {height:90px;}
+/* main-4게시판 이벤트신청, 행사축제 공통 내용 */
+main #board .event .contents,
+main #board .festival .contents {margin-top:17px;}
+main #board .event .contents a,
+main #board .festival .contents a {
+    display:block;
+    overflow:hidden;
+    margin-bottom:25px;
+}
+main #board .event .contents a:last-child,
+main #board .festival .contents a:last-child {margin-bottom:0;}
+main #board .event .contents a span,
+main #board .festival .contents a span {}
+main #board .event .contents a span:first-child,
+main #board .festival .contents a span:first-child {
+    margin-right:10px;
+    float:left;
+}
+main #board .event .contents a span:last-child,
+main #board .festival .contents a span:last-child {
+    white-space:nowrap; /* 줄바꿈되지 않도록 처리하는 속성 */
+    text-overflow:ellipsis; /* ...말줄임표시 */
+    overflow:hidden; /* 영역 밖의 글자 숨김 처리 */
+    background-color:white;
+    float:right; width:87%;
+}
+/* main-4게시판 카테고리 */
+main #board div .contents a .administrative {color:#007AFF;}
+main #board div .contents a .environment {color:#599100;}
+main #board div .contents a .welfare {color:#D76000;}
+main #board div .contents a .housing {color:#C35C3C;}
+main #board div .contents a .culture {color:#9B64D3;}
+main #board div .contents a .economy {color:#9B64D3;}
+/* main-4 게시판 개별내용 */
 main #board .event {
     background-color:gold;
 }
 main #board .event .title {}
 main #board .event .title h2 {}
-main #board .event .title h2 .more {}
-main #board .event .title h2 .more img {}
-main #board .event .contetns {}
-main #board .event .contetns a {}
-main #board .event .contetns a span {}
-main #board .event .contetns a .administrative {}
-main #board .event .contetns a .environment {}
-main #board .event .contetns a .welfare {}
-main #board .event .contetns a .housing {}
-main #board .event .contetns a .culture {}
+main #board .event .title .more {}
+main #board .event .title .more img {}
+main #board .event .contents {}
+main #board .event .contents a {}
+main #board .event .contents a span {}
+main #board .event .contents a .administrative {}
+main #board .event .contents a .environment {}
+main #board .event .contents a .welfare {}
+main #board .event .contents a .housing {}
+main #board .event .contents a .culture {}
 main #board .festival {
     background-color:lightcoral;
+    margin:0 22px;
 }
 main #board .festival .title {}
 main #board .festival .title h2 {}
 main #board .festival .title .more {}
 main #board .festival .title .more img {}
-main #board .festival .contets {}
-main #board .festival .contets a {}
-main #board .festival .contets a span {}
-main #board .festival .contets a .environment {}
-main #board .festival .contets a .economy {}
-main #board .festival .contets a .culture {}
-main #board .service {}
-main #board .service .title {}
+main #board .festival .contents {}
+main #board .festival .contents a {}
+main #board .festival .contents a span {}
+main #board .festival .contents a .environment {}
+main #board .festival .contents a .economy {}
+main #board .festival .contents a .culture {}
+main #board .service {width:33.33%;}
+main #board .service .title {
+    border:0; height:90px;} 
 main #board .service .title h2 {}
-main #board .service .contents {}
-main #board .service .contents a {}
+main #board .service .contents {
+    background-color:#EFF4F8;
+    overflow:hidden;
+    padding:13px;
+}
+main #board .service .contents a {
+    float:left; width:50%; text-align:left;
+    margin-bottom:25px;
+}
+main #board .service .contents a:nth-last-child(2),
+main #board .service .contents a:last-child {margin-bottom:0;}
 /* main-5 분야정보 */
 main #field_info {
     background-color:darkorchid;
 }
 main #field_info .title {}
 main #field_info .title h2 {}
-main #field_info .contents {}
-main #field_info .contents a {}
+main #field_info .contents {
+    text-align:center;
+    padding:20px 40px;
+    overflow:hidden;
+}
+main #field_info .contents a {
+    width:12.5%; /* 100/8 */
+    float:right;
+}
 main #field_info .contents a img {}
-main #field_info .contents a span {}
+main #field_info .contents a span {
+    display:block;
+    font-size:0.833rem; letter-spacing:-0.02em;
+}
 /* main-6 새소식 */
 main #news {
     background-color:lightblue;
 }
 main #news .title {}
 main #news .title h2 {}
-main #news .title h2 .site {}
-main #news .contents {}
-main #news .contents a {}
-main #news .contents a img {}
-main #news .contents a span {}
+main #news .title .site {}
+main #news .contents {
+    overflow:hidden;
+    padding:20px 0 40px 0;
+}
+main #news .contents a {
+    width:25%;
+    float:left;
+    text-align:left;
+}
+main #news .contents a img {margin-bottom:10px;}
+main #news .contents a span {
+    display:block;
+    letter-spacing:-0.06em; line-height:26px;
+    margin-bottom:25px;
+    padding-right:20px;
+}
 /* footer-f top */
 footer {
     background-color:lightseagreen;
 }
 footer .f_top {
     background-color:lightyellow;
+    padding:20px 0;
+    border:1px solid #aaa;
+    border-left:0; border-right:0;
+    overflow:hidden;
 }
 footer .f_top .left {}
-footer .f_top .left a {}
-footer .f_top .left a em {}
+footer .f_top .left a {
+    float:left;
+    font-size:0.833rem; letter-spacing:-0.02em;
+    margin-right:12px;
+    color:#888;
+}
+footer .f_top .left span {
+    width:1px; height:9px;
+    backgrond-color:#aaa;
+    display:block;
+    float:left;
+}
+footer .f_top .left a:nth-child(2) {color:#222;}
 footer .f_top .right {}
-footer .f_top .right a {}
+footer .f_top .right a {float:right;}
+footer .f_top .right a:first-child {
+    background:white url(../image/icon_sns2/icon_set_sns_01.png) no-repeat;
+    width:25px; height:25px;
+    display:inline-block;
+    text-indent:-9999px; /* 화면밖 글자 내보내기 */
+}
+footer .f_top .right a:nth-child(2) {
+    background:url(../image/icon_sns2/icon_set_sns_02.png) no-repeat;
+    width:25px; height:25px; 
+    display:inline-block;
+    text-indent:-9999px;
+}
+footer .f_top .right a:nth-child(3) {
+    background:url(../image/icon_sns2/icon_set_sns_03.png) no-repeat;
+    width:25px; height:25px; 
+    display:inline-block;
+    text-indent:-9999px;
+}
+footer .f_top .right a:nth-child(4) {
+    background:url(../image/icon_sns2/icon_set_sns_04.png) no-repeat;
+    width:25px; height:25px; 
+    display:inline-block;
+    text-indent:-9999px;
+}
+footer .f_top .right a:nth-child(5) {
+    background:url(../image/icon_sns2/icon_set_sns_05.png) no-repeat;
+    width:25px; height:25px; 
+    display:inline-block;
+    text-indent:-9999px;
+}
+footer .f_top .right a:nth-child(6) {
+    background:url(../image/icon_sns2/icon_set_sns_06.png) no-repeat;
+    width:25px; height:25px; 
+    display:inline-block;
+    text-indent:-9999px;
+}
 /* footer-f btm */
-footer .f_btm {}
-footer .f_btm .left {}
-footer .f_btm .left p {}
+footer .f_btm {
+    overflow:hidden;
+    padding-bottom:30px;
+}
+footer .f_btm .left {
+    float:left;
+    overflow:hidden;
+}
+footer .f_btm .left p {
+    float:left;
+    margin-right:30px;
+    margin-top:20px;
+}
 footer .f_btm .left p img {}
-footer .f_btm .left address {}
-footer .f_btm .left address a {}
-footer .f_btm .right {}
+footer .f_btm .left address {
+    float:right; margin-top:25px;
+    line-height:20px; letter-spacing:-0.02em; font-size:0.833rem;
+}
+footer .f_btm .left address a {
+    line-height:20px; letter-spacing:-0.02em; font-size:0.833rem;
+}
+footer .f_btm .right {float:right; margin-top:20px;}
 footer .f_btm .right a {}
 footer .f_btm .right a img {}

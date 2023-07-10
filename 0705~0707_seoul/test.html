@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>test</title>
+    <link rel="stylesheet" href="">
+    <style>
+        html,body {
+            background:aqua url(./image/news_img08.jpg) no-repeat fixed center bottom;
+            background-size:cover;
+            height:200%;
+            /* background:palevioletred url(./image/news_img07.jpg) no-repeat fixed center top;
+            background-size:cover; */
+            
+        }
+        #bg {
+            background-color:rgba(225,255,255,0.8);
+            position:relative;
+        }
+        #bg p {
+            background:yellow url(./image/news_img02.jpg) no-repeat;
+            width:400px; height:200px;
+            border:5px solid #000
+        }
+        #bg p:nth-child(1) {}
+        #bg p:nth-child(3) {
+            background-repeat:repeat-x;
+            /* background:repeat-x; */
+            right:0; bottom:0; position:absolute;
+
+        }
+        #bg p:nth-child(2) {
+            border-color:red;
+            position:relative;
+            left:100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="bg">
+        <p></p>
+        <p></p>
+        <p></p>
+    </div>
+    <h1>Vs code Emmet</h1>
+    <!-- p>em -->
+    <p><em></em></p>
+    <!-- p>span*2 -->
+    <p><span>1</span><span>2</span></p>  
+    <p>동일관계(형제)의 요소를 2개 이상 제직하고 싶을땐 곱하기를 붙여서 Emmet기능 </p>
+    <!-- ul>li*4>a -->
+    <ul>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+    </ul>
+    <!-- div>p*5 -->
+    <div>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+    </div>
+    <!-- header>h1+nav+p -->
+    <header>
+        <h1></h1>
+        <nav></nav>
+        <p></p>
+    </header>
+    <!-- div.test>p>em -->
+    <div class="test">
+        <p><em></em></p>
+    </div>
+    <!-- div#box>section.contents>h1+p -->
+    <div id="box">
+        <section class="contents"></section>
+    </div>>h1+p
+    <!-- img -->
+    <img src="./image/banner_02.jpg" alt="서울시청">
+    <!--video -->
+    <video src="#"></video>
+    <!-- form -->
+    <form action="#"></form>
+    <!-- form:get -->
+    <form action="" method="get"></form>
+    <!-- form:post -->
+    <form action="" method="post"></form>
+    <!-- input -->
+    <input type="text">
+    <button></button>
+    <!-- button:submit -->
+    <button type="submit"></button>
+    <!-- label>input:checkbox -->
+    <label for=""><input type="checkbox" name="" id=""></label>
+    <!-- table>thead>tr>th*2 -> thead 아래에 tbody>tr>td*2 -->
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- div.right>form:post#langFrm+div.weather -->
+    <div class="right">
+        <form action="" method="post" id="langFrm"></form>
+        <!-- fieldset>legend+select+button:submit -->
+        <fieldset>
+            <legend></legend>
+            <select name="" id=""></select>
+            <!-- option*2 -->
+            <option value=""></option>
+            <option value=""></option>
+            <button type="submit"></button></fieldset>
+        <div class="weather">
+            <!-- p.current_weather+p.dust -->
+            <p class="current_weather">27.5</p>
+            <p class="dust">미세먼지</p>
+        </div>
+    </div>
+</body>
+</html>
