@@ -22,12 +22,12 @@ header {
 
 }
 header #h_top {
-    background-color:darksalmon;
+    /* background-color:darksalmon; */
     overflow:hidden;
     padding-bottom:10px;
 }
 header #h_top .left {
-    background-color:rgb(243, 223, 44);
+    /* background-color:rgb(243, 223, 44); */
     float:left;
 }
 header #h_top .left h1 {
@@ -38,7 +38,7 @@ header #h_top .left h1 {
 header #h_top .left h1 a {}
 header #h_top .left h1 a img {width:100%}
 header #h_top .left nav {
-    background-color:palevioletred;
+    /* background-color:palevioletred; */
     float:left;
 }
 header #h_top .left nav ul {
@@ -54,7 +54,7 @@ header #h_top .left nav ul li a {
     font-weight:500;
 }
 header #h_top .right {
-    background-color:plum;
+    /* background-color:plum; */
     float:right;
     margin-top:18px;
 }
@@ -81,7 +81,7 @@ header #h_btm h1 {
 header #h_btm h1 a {}
 header #h_btm h1 a img {width:100%;}
 header #h_btm #search_frm {
-    background-color:blueviolet;
+    /* background-color:blueviolet; */
     float:left;
     margin:36.5px 0 0 231px;
 }
@@ -107,7 +107,7 @@ header #h_btm #search_frm fieldset #search_btn {
 }
 header #h_btm #search_frm fieldset #search_btn img {width:100%}
 header #h_btm .right {
-    background-color: greenyellow;
+    /* background-color: greenyellow; */
     float:right;
     margin-top:16.5px;
     text-align:right;
@@ -151,11 +151,11 @@ header #h_btm .right .weather .current_dust {
 main {}
 /* main-1 광고배너 */
 main #visual {
-    background-color:cornflowerblue;
+    /* background-color:cornflowerblue; */
     overflow:hidden;
 }
 main #visual .left {
-    background-color:azure;
+    /* background-color:azure; */
     position:relative;/* 겹치는 대상 부모기준 */
     width:770px; height:350px;
     float:left;
@@ -170,7 +170,7 @@ main #visual .left .close {
     right:10px; bottom:10px;
 }
 main #visual .right {
-    background-color:bisque;
+    /* background-color:bisque; */
     float:right;
     
 }
@@ -180,11 +180,13 @@ main #visual .right .covid {
     position:relative;
 }
 main #visual .right .covid span {
-    background-color:aqua;
+    /* background-color:aqua; */
     position:absolute;
+    color:#fff;
 }
 main #visual .right .covid .data {
     top:22px; right:37px;
+    color:#000;
 }
 main #visual .right .covid .data {}
 main #visual .right .covid .data1 {top:84px; left:82px;}
@@ -202,7 +204,7 @@ main #visual .right .traffic img {width:100%;}
 /* 주요서비스 ~ 새소식 제목 디자인 그룹 */
 /* 정리후 */
 main section .title {
-    background-color:rgb(245, 219, 233);
+    /* background-color:rgb(245, 219, 233); */
     padding:50px 0 10px;
     border-bottom:1px solid #aaa;
     overflow:hidden;
@@ -236,7 +238,7 @@ main #news .title {}
 main #news .title h2 {} */
 /* main-2 주요서비스 */
 main #main_service {
-    background-color:coral;
+    /* background-color:coral; */
 }
 main #main_service .title {}
 main #main_service .title h2 {}
@@ -270,7 +272,7 @@ main .bnr_bg .bnr a {
 main .bnr_bg .bnr a  img {}
 /* main-4 게시판 */
 main #board {
-    background-color:deepskyblue;
+    /* background-color:deepskyblue; */
     overflow:hidden
 }
 /* board-contents 공통그룹 */
@@ -302,7 +304,7 @@ main #board .festival .contents a span:last-child {
     white-space:nowrap; /* 줄바꿈되지 않도록 처리하는 속성 */
     text-overflow:ellipsis; /* ...말줄임표시 */
     overflow:hidden; /* 영역 밖의 글자 숨김 처리 */
-    background-color:white;
+    /* background-color:white; */
     float:right; width:87%;
 }
 /* main-4게시판 카테고리 */
@@ -314,7 +316,7 @@ main #board div .contents a .culture {color:#9B64D3;}
 main #board div .contents a .economy {color:#9B64D3;}
 /* main-4 게시판 개별내용 */
 main #board .event {
-    background-color:gold;
+    /* background-color:gold; */
 }
 main #board .event .title {}
 main #board .event .title h2 {}
@@ -329,7 +331,7 @@ main #board .event .contents a .welfare {}
 main #board .event .contents a .housing {}
 main #board .event .contents a .culture {}
 main #board .festival {
-    background-color:lightcoral;
+    /* background-color:lightcoral; */
     margin:0 22px;
 }
 main #board .festival .title {}
@@ -359,7 +361,7 @@ main #board .service .contents a:nth-last-child(2),
 main #board .service .contents a:last-child {margin-bottom:0;}
 /* main-5 분야정보 */
 main #field_info {
-    background-color:darkorchid;
+    /* background-color:darkorchid; */
 }
 main #field_info .title {}
 main #field_info .title h2 {}
@@ -379,7 +381,7 @@ main #field_info .contents a span {
 }
 /* main-6 새소식 */
 main #news {
-    background-color:lightblue;
+    /* background-color:lightblue; */
 }
 main #news .title {}
 main #news .title h2 {}
@@ -402,67 +404,70 @@ main #news .contents a span {
 }
 /* footer-f top */
 footer {
-    background-color:lightseagreen;
+    /* background-color:lightseagreen; */
 }
 footer .f_top {
-    background-color:lightyellow;
-    padding:20px 0;
+    /* background-color:lightyellow; */
+    padding-bottom:20px;
     border:1px solid #aaa;
     border-left:0; border-right:0;
     overflow:hidden;
 }
-footer .f_top .left {}
+footer .f_top .left {
+    margin-top:27px;
+    float:left;
+}
 footer .f_top .left a {
     float:left;
     font-size:0.833rem; letter-spacing:-0.02em;
-    margin-right:12px;
     color:#888;
 }
-footer .f_top .left span {
-    width:1px; height:9px;
-    backgrond-color:#aaa;
-    display:block;
-    float:left;
+/* left-a 가상선택자(구분선용) */
+footer .f_top .left a::after {
+    /* 가상선택자의 필수 속성1 */
+    content:''; /* 빈문자열 */
+    width:1px; height:10px;
+    background:#000;
+    display:inline-block;
+    margin:0 10px;
 }
+/* 사이트맵 a 마지막 구분선 제거 */
+footer .f_top .left a:last-child::after {display:none;}
 footer .f_top .left a:nth-child(2) {color:#222;}
-footer .f_top .right {}
-footer .f_top .right a {float:right;}
-footer .f_top .right a:first-child {
-    background:white url(../image/icon_sns2/icon_set_sns_01.png) no-repeat;
+footer .f_top .right {float:right;}
+footer .f_top .right a {
+    float:left; margin-top:20px;
     width:25px; height:25px;
     display:inline-block;
     text-indent:-9999px; /* 화면밖 글자 내보내기 */
+    margin-right:5px;
+    background:no-repeat;
 }
+footer .f_top .right a:first-child {
+    background-image: url(../image/icon_sns2/icon_set_sns_01.png);
+}
+footer .f_top .right a:first-child:hover {background-image:url(../image/icon_sns2/icon_set_sns_08.png);}
 footer .f_top .right a:nth-child(2) {
-    background:url(../image/icon_sns2/icon_set_sns_02.png) no-repeat;
-    width:25px; height:25px; 
-    display:inline-block;
-    text-indent:-9999px;
+    background-image:url(../image/icon_sns2/icon_set_sns_02.png);
 }
+footer .f_top .right a:nth-child(2):hover {background-image:url(../image/icon_sns2/icon_set_sns_09.png);}
 footer .f_top .right a:nth-child(3) {
-    background:url(../image/icon_sns2/icon_set_sns_03.png) no-repeat;
-    width:25px; height:25px; 
-    display:inline-block;
-    text-indent:-9999px;
+    background-image:url(../image/icon_sns2/icon_set_sns_03.png);
 }
+footer .f_top .right a:nth-child(3):hover {background-image:url(../image/icon_sns2/icon_set_sns_10.png);}
 footer .f_top .right a:nth-child(4) {
-    background:url(../image/icon_sns2/icon_set_sns_04.png) no-repeat;
-    width:25px; height:25px; 
-    display:inline-block;
-    text-indent:-9999px;
+    background-image:url(../image/icon_sns2/icon_set_sns_04.png);
 }
+footer .f_top .right a:nth-child(4):hover {background-image:url(../image/icon_sns2/icon_set_sns_11.png);}
 footer .f_top .right a:nth-child(5) {
-    background:url(../image/icon_sns2/icon_set_sns_05.png) no-repeat;
-    width:25px; height:25px; 
-    display:inline-block;
-    text-indent:-9999px;
+    background-image:url(../image/icon_sns2/icon_set_sns_05.png);
 }
+footer .f_top .right a:nth-child(5):hover {background-image:url(../image/icon_sns2/icon_set_sns_12.png);}
 footer .f_top .right a:nth-child(6) {
-    background:url(../image/icon_sns2/icon_set_sns_06.png) no-repeat;
-    width:25px; height:25px; 
-    display:inline-block;
-    text-indent:-9999px;
+    background-image:url(../image/icon_sns2/icon_set_sns_06.png);
+    margin-right:0;
 }
+footer .f_top .right a:nth-child(6):hover {background-image:url(../image/icon_sns2/icon_set_sns_12.png);}
 /* footer-f btm */
 footer .f_btm {
     overflow:hidden;
