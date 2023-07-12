@@ -16,7 +16,7 @@ header nav footer main section article aside
 ul ol li dl dt dd
 ```
 
-#23/06/23~23/06/27
+# 23/06/23~23/06/27
 ```
 html:5, meta:kw, meta:desc, a href target,
 img src alt, fig, figcaption, video src autoplay muted controls loop,
