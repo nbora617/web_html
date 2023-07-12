@@ -1,0 +1,138 @@
+/* rgb(95 3 128) */
+/* 1050px */
+/* height: 42 35 63 56 px */
+/* all layout */
+.top_bnr_bg .top_bnr,
+header {
+    /* background-color:pink; */
+    width:1050px;
+    margin:0 auto;
+}
+/* header-sprite 공통그룹선택자 */
+header .h_middle .logo h1,
+header .h_middle .lnb2 a,
+header .h_middle #searchFrm .search_btn,
+header .h_btm .all_menu .menu
+    {background:url(../images/kurly_img/icon_set.png) no-repeat;
+    width:36px; height:36px;
+    display:inline-block;
+    text-indent:-9999px;
+}
+header .h_middle .logo h1 {background-position:0 -158px; width:82px; height:42px;}
+header .h_middle #searchFrm .search_btn {background-position:0 -122px;}
+header .h_middle .lnb2 .map {background-position:0 -86px;}
+header .h_middle .lnb2 .like {background-position:0 -50px;}
+header .h_middle .lnb2 .cart {background-position:0 -14px;}
+header .h_btm .all_menu .menu {background-position:0 0; width:16px; height:14px;}
+/* top_bnr */
+.top_bnr_bg {
+    background-color:rgb(95, 3, 128);
+}
+.top_bnr_bg .top_bnr {
+    height:42px;
+    display:flex; flex-flow:row nowrap;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+}
+.top_bnr_bg .top_bnr .adver {color:#fff; letter-spacing:-0.02em;}
+.top_bnr_bg .top_bnr .adver em {font-weight:700;}
+.top_bnr_bg .top_bnr .close {
+    position:absolute; right:0;
+}
+.top_bnr_bg .top_bnr .close .fa-xmark {color:#fff;}
+/* header */
+header {}
+/* header-lnb1 */
+header .lnb1 {
+    background-color:pink;
+    height:35px;
+    display:flex; flex-flow:row nowrap;
+    justify-content:flex-end;
+    align-items:center;
+}
+header .lnb1 a {font-weight:700; font-size:0.833rem;}
+header .lnb1 a::after {
+    content:'';
+    width:1px; height:10px; 
+    background-color:rgb(226, 226, 226);
+    display:inline-block;
+    margin:0 10px;
+}
+header .lnb1 a:last-child::after {margin:0;}
+header .lnb1 .join {color:rgb(95, 3, 128);}
+header .lnb1 .login {}
+header .lnb1 .customer_service {}
+/* header-middle */
+header .h_middle {
+    background-color:plum;
+    height:63px;
+    display:flex; flex-flow:row nowrap;
+    justify-content:space-between;
+    align-items:center;
+}
+header .h_middle .logo {
+    display:flex; flex-flow:row nowrap;
+    align-items:center;
+}
+header .h_middle .logo h1 {margin-right:20px;}
+header .h_middle .logo a {font-weight:700;}
+header .h_middle .logo .market {}
+header .h_middle .logo .market::after {
+    content:'';
+    width:1px; height:10px;
+    background-color:rgb(226, 226, 226);
+    display:inline-block;
+    margin:0 10px;
+}
+header .h_middle .logo .beauty {color:rgb(181, 181, 181);}
+header .h_middle .logo .beauty sup {font-size:10%;}
+header .h_middle #searchFrm {}
+header .h_middle #searchFrm fieldset {
+    border:1px solid rgb(95, 3, 128);
+    border-radius:5px;
+    width:400px; height:48px;
+    padding:0 20px;
+    display:flex; flex-flow:row nowrap;
+    justify-content:space-between;
+    align-items:center;
+}
+header .h_middle #searchFrm fieldset .user_search {
+    background:none;
+    width:calc(100% - 36px);
+}
+header .h_middle #searchFrm fieldset .user_search::placeholder {color:#333;}
+header .h_middle #searchFrm fieldset .search_btn {}
+header .h_middle .lnb2 {}
+header .h_middle .lnb2 a {margin-right:10px;}
+header .h_middle .lnb2 a:last-child {margin-right:0;}
+header .h_middle .lnb2 .map {}
+header .h_middle .lnb2 .like {}
+header .h_middle .lnb2 .cart {}
+/* header-btm */
+header .h_btm {
+    background-color:palegoldenrod;
+    height:56px;
+    display:flex; flex-flow:row nowrap;
+    justify-content:space-between;
+    align-items:center;
+}
+header .h_btm .all_menu {}
+header .h_btm .all_menu .menu {margin-right:10px;}
+header .h_btm .all_menu span {}
+header .h_btm nav {}
+header .h_btm nav a {margin:0 40px;}
+header .h_btm .delivery_info {
+    padding:5px 10px;
+    border:1px solid #ccc;
+    border-radius:15px;
+}
+header .h_btm .delivery_info span {
+    font-weight:700;
+    color:#616161;
+}
+header .h_btm .delivery_info em {
+    color:rgb(95, 3, 128);
+    font-weight:700;
+    
+}
