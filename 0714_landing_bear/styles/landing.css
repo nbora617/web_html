@@ -1,0 +1,266 @@
+/* landing. css */
+/* sponsor_btn */
+section div .sponsor_btn {
+    background: linear-gradient(90deg, rgba(255,147,0,1) 0%, rgba(255,114,0,1) 100%);
+    border-radius:50px; 
+    padding:30px 70px;
+}
+section div .sponsor_btn span {
+    font-size:1.777rem; font-weight:500; color:#fff;
+    margin-right:10px;
+    letter-spacing:-0.04em;
+}
+/* title */
+.title_bg {
+    background: url(../images/bg1.png) no-repeat fixed center 70%;
+    background-size:cover;
+    position:relative;
+    }
+.title_bg::after {
+    content:'';
+    display:block; width:100%; height:800px;
+    background: linear-gradient(180deg, rgba(255,255,255,0.7) 0%, rgba(0,0,0,0.7) 100%);
+    position:absolute;
+    top:0px; left:0px;  z-index:100;
+    /* absolute 적용 시 기본 block w100%  inline처럼 변함 */
+}
+.title_bg #snow {
+    position:absolute; top:0; left:0; 
+    z-index:200; width:100%; height:800px;}
+.title_bg .title {
+    /* background:rgba(225,225,0,0.5); */
+    width:1200px; height:800px; margin:0 auto;
+    display:flex;
+    flex-flow:column wrap;
+    align-items:center;
+    z-index:300; position:relative;   /* title내용부분이 최상단에 위치하도록 하는 속성 */
+}
+.title_bg .title .logo {
+    width:50px; height:50px;
+    display:block;
+    align-self:flex-start;
+}
+.title_bg .title .logo img {width:100%;}
+.title_bg .title h1 {
+    font-size:3.517rem; font-weight:500; line-height:80px;
+    margin:145px 0 45px 0;
+    text-align:center;
+    color:#fff;
+}
+.title_bg .title h1 em {
+    font-size:3.517rem; font-weight:700;
+    color:#fff;
+}
+.title_bg .title .sponsor_btn {}
+.title_bg .title .sponsor_btn span {}
+.title_bg .title .sponsor_btn img {}
+.title_bg .title .sponsor_qa {
+    align-self:flex-end;
+    border-radius:50px;
+    padding:10px 20px;
+    background-color:#222;
+}
+.title_bg .title .sponsor_qa img {}
+.title_bg .title .sponsor_qa span {
+    font-size:1.333rem; font-weight:500; color:#fff;
+    margin: 10px; display:inline-block;
+}
+/* quiz */
+.quiz_bg {background:url(../images/quiz_bg.png);}
+.quiz_bg .quiz {
+    width:1200px; margin:0 auto;
+    padding:100px 0;
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:space-between;
+}
+.quiz_bg .quiz .left {
+    display:flex;
+    flex-flow:column wrap;
+}
+.quiz_bg .quiz .left > * {margin-bottom:35px;}
+.quiz_bg .quiz .left h2 {
+    color:#fff; font-size:3.157rem; font-weight:700;
+    align-self:center;
+
+}
+.quiz_bg .quiz .left h3 {
+    color:#fff; font-size:1.333rem; font-weight:500;
+}
+.quiz_bg .quiz .left #quizFrm {}
+.quiz_bg .quiz .left #quizFrm fieldset {}
+.quiz_bg .quiz .left #quizFrm fieldset ul {}
+.quiz_bg .quiz .left #quizFrm fieldset ul li {margin-bottom:25px;}
+.quiz_bg .quiz .left #quizFrm fieldset ul li:last-child {margin-bottom:35px;}
+.quiz_bg .quiz .left #quizFrm fieldset ul li label input {appearance:none; /* form input 요소 숨기기 */} 
+.quiz_bg .quiz .left #quizFrm fieldset ul li label #q1 {}
+.quiz_bg .quiz .left #quizFrm fieldset ul li label #q2 {}
+.quiz_bg .quiz .left #quizFrm fieldset ul li label #q3 {}
+.quiz_bg .quiz .left #quizFrm fieldset ul li label #q4 {}
+.quiz_bg .quiz .left #quizFrm fieldset ul li label span {
+    color:#fff;
+    background:/* purple */ url(../images/quiz_un_check.png) no-repeat;
+    padding-left:34px;   /* 배경은 여백의 영향을 받지 않음 */
+}
+/* 상태선택자 (radio check될 경우 span의 이미지 변경하기)*/
+.quiz_bg .quiz .left #quizFrm fieldset ul li label input:checked+span {
+    background:url(../images/quiz_check.png) no-repeat;
+}
+.quiz_bg .quiz .left #quizFrm fieldset .quiz_btn {
+    background:#222;
+    color:#fff;
+    padding:20px 170px; border-radius:50px;
+    font-size:1.333rem; font-weight:500;
+}
+.quiz_bg .quiz .right {
+    display:flex;
+    flex-flow:column wrap;
+}
+.quiz_bg .quiz .right p:first-child {
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:center;
+    align-items:center;
+    padding:20px 0; width:550px;
+    background:#ff7200;
+    border-radius:20px 20px 0 0;
+}
+.quiz_bg .quiz .right p img {}
+.quiz_bg .quiz .right p:first-child span {
+    font-size:1.333rem; letter-spacing:-0.04rem; font-weight:700;
+    color:#fff; margin-left:10px;
+}
+.quiz_bg .quiz .right .contents {
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:center;
+    align-items:flex-end;
+    padding:60px 0; width:550px;
+    background:#fff;
+    border-radius:0 0 20px 20px;
+}
+.quiz_bg .quiz .right .contents em {
+    color:#ff7200; font-size:6.250rem; font-weight:700; letter-spacing:-0.04em;
+}
+.quiz_bg .quiz .right .contents span {
+    font-size:3.175rem; font-weight:700; letter-spacing:-0.04em;
+}
+.quiz_bg .quiz .right .contents span:nth-last-child(2) {color:#ff7200; margin-right:10px;}
+.quiz_bg .quiz .right .update {
+    color:#fff; font-size:1.333rem; font-weight:700; letter-spacing:-0.02rem;
+    margin-top:30px;
+}
+/* youtube */
+.youtube_bg {
+    background:url(../images/video_bg.png) no-repeat fixed center;
+    background-size:cover;
+    }
+.youtube_bg .youtube {
+    display:flex;
+    flex-flow:column nowrap;
+    align-items:center;
+    padding:100px 0;
+}
+.youtube_bg .youtube >* {margin-bottom:70px;}
+.youtube_bg .youtube h2 {
+    font-size:3.157rem; font-weight:700; letter-spacing:-0.04em;
+    text-align:center;
+}
+.youtube_bg .youtube video {width:800px; height:500px;}
+.youtube_bg .youtube .sponsor_btn {margin-bottom:0;}
+/* 50% 감소 */
+.decrease_bg {
+    background:url(../images/50_bg.png);
+}
+.decrease_bg .decrease {
+    width:1200px; margin:0 auto;
+    padding:100px 0;
+    display:flex;
+    flex-flow:column nowrap;
+    align-items:flex-start;
+}
+.decrease_bg .decrease h2 {
+    font-size:3.157rem; font-weight:700; color:#fff; line-height:80px;
+}
+.decrease_bg .decrease h2 span {
+    font-size:3.157rem; font-weight:700; color:#000;
+    background:#fff;
+}
+.decrease_bg .decrease p:nth-of-type(1) {
+    font-size:1.777rem; letter-spacing:-0.04em;
+    color:#fff; line-height:50px;
+    margin:70px 0;
+}
+.decrease_bg .decrease p:nth-of-type(2) {width:1200px; height:600px;}
+.decrease_bg .decrease p img {width:100%; height:100%}
+/* 5. 28조/27cm/332만명 */
+.glacier_bg {background:#f1f1f1;}
+.glacier_bg .glacier {
+    width:1200px; margin:0 auto; padding:100px 0;
+    display:flex;
+    flex-flow:column nowrap;
+    align-items:center;
+}
+.glacier_bg .glacier {}
+.glacier_bg .glacier h2 {
+    font-size:3.157rem; font-weight:700; 
+}
+.glacier_bg .glacier .contents {
+    font-size:1.777rem; letter-spacing:-0.04em; line-height:50px;
+    margin:70px 0;
+}
+.glacier_bg ul {
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:space-between;
+}
+.glacier_bg ul li {
+    width:calc(33.33% - 40px / 3);
+    margin-right:20px;
+}
+.glacier_bg ul li:last-child {margin-right:0;}
+.glacier_bg ul li .top {
+    display:flex;
+    flex-flow :column nowrap;
+    justify-content:flex-start;
+    align-items:center;
+    height:295px;
+    background:url(../images/27.png) center 50%;
+    background-size:cover;
+}
+.glacier_bg ul li:nth-child(2) .top {
+    background-image:url(../images/28.png);
+}
+.glacier_bg ul li .top h3 {
+    font-size:3.157rem; font-weight:700; color:#fff;
+    margin-bottom:30px; margin-top:50px;
+}
+.glacier_bg ul li .top p {
+    font-size:1.333rem; color:#fff;
+}
+.glacier_bg ul li .list_contents {
+    background:#fff;
+    height:265px; padding:30px 30px 0 30px; text-align:center; 
+    font-size:1.250rem; letter-spacing:-0.04em; line-height:40px;
+}
+.glacier_bg ul li:last-child .list_contents {padding-top:50px}
+/* 6. 지구위기 */
+.earth_bg {background:url(../images/50_bg.png);}
+.earth_bg .earth {
+    width:1200px; margin:0 auto; padding:100px 0;
+    display:flex;
+    flex-flow:column nowrap;
+    justify-content:flex-start;
+}
+.earth_bg .earth h2 {font-size:3.157rem; font-weight:700; color:#fff; line-height:80px;}
+.earth_bg .earth h2 span {
+    font-size:3.157rem; font-weight:700; color:#000;
+    background:#fff;
+}
+.earth_bg .earth .contents {
+    font-size:1.777rem; letter-spacing:-0.04em;
+    color:#fff; line-height:50px;
+    margin:70px 0;
+}
+.earth_bg .earth p {width:1200px; height:600px;}
+.earth_bg .earth p img {width:100%; height:100%;}
